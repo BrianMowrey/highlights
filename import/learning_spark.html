@@ -1,0 +1,188 @@
+<p id=3D"insertionheader"><br></p>
+        <h3 style=3D"margin-top:-7px; font-family:Helvetica Neue, Arial, San=
+s-Serif;font-weight:normal;font-size:17px;color:rgb(26,26,26);line-height:20=
+px; text-align:center;">
+            NOTES FROM
+        </h3>
+        <h1 class=3D"booktitle" style=3D"margin-top:-5px;" width=3D"80%">
+                Learning Spark
+        </h1>
+        <h2 style=3D"margin-top:-20px; font-family:Helvetica Neue, Arial, Sa=
+ns-Serif;font-weight:normal;font-size:23px;color:rgb(26,26,26);line-height:2=
+6px; word-break: break-word; text-align:center; margin-bottom:46px;">
+            Holden Karau, Andy Konwinski, Patrick Wendell
+        </h2>
+            <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    What Is Apache Spark?
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                Apache Spark is a cluster computing platform designed to be f=
+ast and general-purpose.
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    Spark Streaming
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                Spark Streaming is a Spark component that enables processing=
+ of live streams of data.
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    MLlib
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                Spark comes with a library containing common machine learnin=
+g (ML) functionality, called MLlib.
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    GraphX
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                GraphX is a library for manipulating graphs (e.g., a social n=
+etwork=E2=80=99s friend graph) and performing graph-parallel computations.
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    A Brief History of Spark
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                Spark started in 2009 as a research project in the UC Berkel=
+ey RAD Lab, later to become the AMPLab.
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+        <div class=3D"annotation">
+            <div class=3D"annotationheader">
+                <div class=3D"annotationdate">
+                    November 12, 2020
+                </div>
+                <div class=3D"annotationchapter">
+                    Initializing a SparkContext
+                </div>
+            </div>
+            <div class=3D"annotationcontent">
+                        <div class=3D"annotationselectionMarker yellow">
+            </div>
+            <div class=3D"annotationselectioninnermargin">
+            </div>
+                <p class=3D"annotationrepresentativetext">
+                Example 2-7. Initializing Spark in Python
+from pyspark import SparkConf, SparkContext
+
+conf =3D SparkConf().setMaster("local").setAppName("My App")
+sc =3D SparkContext(conf =3D conf)
+                </p>
+                <p class=3D"annotationnote">
+               =20
+                </p>
+            </div>
+        </div>
+                    <div class=3D"separator"></div>
+
+    <p class=3D"excerptfrom">
+        All Excerpts From
+    </p>
+    <div style=3D"width:80%;margin-left:auto;margin-right:auto">
+       =20
+    </div>
+    <p class=3D"citation">
+        Holden Karau, Andy Konwinski, Patrick Wendell. =E2=80=9CLearning Spa=
+rk.=E2=80=9D O'Reilly Media, Inc., 2015-01-26T06:00:00+00:00. Apple Books. <=
+br>
+This material may be protected by copyright.
+    </p>
+    <p class=3D"storelink">
+       =20
+    </p>
+   =20
+
+</div></body></html>
+
