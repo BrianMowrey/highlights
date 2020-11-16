@@ -1,19 +1,23 @@
-- page: "What Is Apache Spark?\n                "
-  text: "Apache Spark is a cluster computing platform designed to be f=\nast and general-purpose.\n\
-    \                "
-- page: "Spark Streaming\n                "
-  text: "Spark Streaming is a Spark component that enables processing=\n of live streams\
-    \ of data.\n                "
-- page: "MLlib\n                "
-  text: "Spark comes with a library containing common machine learnin=\ng (ML) functionality,\
-    \ called MLlib.\n                "
-- page: "GraphX\n                "
-  text: "GraphX is a library for manipulating graphs (e.g., a social n=\network=E2=80=99s\
-    \ friend graph) and performing graph-parallel computations.\n                "
-- page: "A Brief History of Spark\n                "
-  text: "Spark started in 2009 as a research project in the UC Berkel=\ney RAD Lab,\
-    \ later to become the AMPLab.\n                "
-- page: "Initializing a SparkContext\n                "
-  text: "Example 2-7. Initializing Spark in Python\nfrom pyspark import SparkConf,\
-    \ SparkContext\n\nconf = SparkConf().setMaster(\"local\").setAppName(\"My App\"\
-    )\nsc = SparkContext(conf = conf)\n                "
+- page: What Is Apache Spark?
+  text: Apache Spark is a cluster computing platform designed to be fast and general-purpose.
+- page: Spark Streaming
+  text: Spark Streaming is a Spark component that enables processing of live streams
+    of data.
+- page: MLlib
+  text: Spark comes with a library containing common machine learning (ML) functionality,
+    called MLlib.
+- page: GraphX
+  text: "GraphX is a library for manipulating graphs (e.g., a social network\u2019\
+    s friend graph) and performing graph-parallel computations."
+- page: A Brief History of Spark
+  text: Spark started in 2009 as a research project in the UC Berkeley RAD Lab, later
+    to become the AMPLab.
+- page: Initializing a SparkContext
+  text: 'Example 2-7. Initializing Spark in Python
+
+    from pyspark import SparkConf, SparkContext
+
+
+    conf = SparkConf().setMaster("local").setAppName("My App")
+
+    sc = SparkContext(conf = conf)'
