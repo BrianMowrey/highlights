@@ -7,10 +7,10 @@ plugins:
 title: Highlights from books and articles | Melanie Richards
 email: brian
 url: "https://brianmowrey.github.io"
-images: /assets/images/content
+images: assets/images/content
 
 baseurl: /highlights
-images: /highlights/assets/images/content
+images: assets/images/content
 
 # Blog settings
 paginate: 10
