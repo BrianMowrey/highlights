@@ -1,0 +1,37 @@
+name: email-random-highlights
+on: 
+  schedule:
+    # every day at 6:01am
+    - cron: '1 6 * * *'
+jobs:
+  generate-and-email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: generate random highlights html
+        run: |
+          python scripts/random_highlights.py --output highlights.html
+      - name: send email
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: mail.drlabs.org
+          server_port: 587
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: Highlights for Today
+          # Literal body:
+          #body: Build job of ${{github.repository}} completed successfully!
+          # Read file contents as body:
+          body: file://highlights.html
+          to: ${{secrets.MAIL_TO}}
+          from: ${{secrets.MAIL_FROM}}
+          # Optional content type (defaults to text/plain):
+          content_type: text/html
+          # Optional attachments:
+          attachments: attachments.zip,git.diff,./dist/static/main.js
