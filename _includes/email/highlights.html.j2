@@ -1,0 +1,33 @@
+{% extends "base.html.j2" %}
+{% block content %}
+{% for highlight in highlights %}
+<div class="separator"></div>
+
+        <div class="annotation">
+            <div class="annotationheader">
+                <div class="annotationdate">
+                   {{ highlight.page }} 
+                </div>
+                <div class="annotationchapter">
+                    {{ highlight.book_title }}
+                </div>
+            </div>
+            <div class="annotationcontent">
+                        <div class="annotationselectionMarker yellow">
+            </div>
+            <div class="annotationselectioninnermargin">
+            </div>
+                <p class="annotationrepresentativetext">
+                     {{ highlight.text }} 
+                </p>
+                <p class="annotationnote">
+                    {{ highlight.note }}
+                </p>
+                <p class="annotationnote">
+                    {{ highlight.author }}
+                </p>
+            </div>
+        </div>
+{% endfor %}
+<div class="separator"></div>
+{% endblock %}
