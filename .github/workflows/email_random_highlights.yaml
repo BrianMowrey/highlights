@@ -3,6 +3,8 @@ on:
   schedule:
     # every day at 6:01am
     - cron: '1 6 * * *'
+  workflow_dispatch:
+  
 jobs:
   generate-and-email:
     runs-on: ubuntu-latest
